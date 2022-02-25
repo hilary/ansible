@@ -1,0 +1,25 @@
+- name: Add 1password repo
+  ansible.builtin.apt_repository:
+    repo: deb [arch=amd64 signed-by=/usr/share/keyrings/1password-archive-keyring.gpg] https://downloads.1password.com/linux/debian/amd64 stable main
+
+- name: Add KellyK emacs repo (stays up to date)
+  ansible.builtin.apt_repository:
+    repo: deb http://ppa.launchpad.net/kelleyk/emacs/ubuntu focal main
+
+- name: Add SpiderOakONE repo (backups)
+  ansible.builtin.apt_repository:
+    repo: deb https://apt.spideroak.com/ubuntu/ release restricted
+
+- name: Add Signal repo (ignore the Xenial, it is up through Focal)
+  ansible.builtin.apt_repository:
+    repo: deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main
+
+- name: Add system76(!!) repo. Ayup, need that one
+  ansible.builtin.apt_repository:
+    repo: deb http://ppa.launchpad.net/system76-dev/stable/ubuntu focal main
+
+# The VS Code repo is autoconfigured by VS Code on installation. Otoh,
+# the goal is not to manually install VS Code, so....
+- name: Add VS Code repo
+  ansible.builtin.apt_repository:
+    repo: deb [arch=amd64,arm64,armhf] http://packages.microsoft.com/repos/code stable main

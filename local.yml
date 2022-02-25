@@ -6,4 +6,5 @@
       changed_when: false
 
   tasks:
+    - import_tasks: tasks/repositories.yml
     - import_tasks: tasks/packages.yml
