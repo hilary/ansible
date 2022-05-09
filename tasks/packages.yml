@@ -5,8 +5,26 @@
     install_recommends: false
     state: latest
     name:
+      - 1password
+      - ansible
+      - ansible-lint
+      - build-essential
+      - ca-certificates
+      - code
+      - deborphan
+      - emacs27
+      - gh
+      - git
+      - gnome-tweaks
+      - gnupg
+      - httpie
       - htop
+      - hostname
       - npm
+      - signal-desktop
+      - slack-desktop
+      - spideroakone
+      - system76-driver-nvidia
       - tilix
       - tmux
       - tree
