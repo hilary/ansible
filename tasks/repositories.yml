@@ -39,4 +39,4 @@
 # Another "autoconfigured" repo entry on manual installation...
 - name: Add Slack repo
   ansible.builtin.apt_repository:
-  repo: deb https://packagecloud.io/slacktechnologies/slack/debian/ jessie main
+    repo: deb https://packagecloud.io/slacktechnologies/slack/debian/ jessie main
