@@ -8,6 +8,7 @@
       - 1password
       - ansible
       - ansible-lint
+      - bash-doc
       - build-essential
       - ca-certificates
       - code
